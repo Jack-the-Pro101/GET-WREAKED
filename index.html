@@ -51,9 +51,13 @@ function playVid() {
     vid.play();
 }
 
+function replaceTHEBUTTON() {
+    let replace = document.getElementById('THEBUTTON');
+    replace.style.display = 'none';
+}
 </script>
 
-<button onclick="revealRickRoll(), playVid()"><span>Please press me ;-;</span></button>
+<button id="THEBUTTON" onclick="revealRickRoll(), playVid(), replaceTHEBUTTON()"><span>Please press me ;-;</span></button>
 
 <div id="revealed" style="display: none;">
 
