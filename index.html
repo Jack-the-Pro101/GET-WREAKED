@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta name="description" content="I wonder what this website is???">
-        <meta name="author" content="Jack Huang">
+        <meta name="author" content="Jack H. (Emperor of Bluegaria)">
 
         <title>???</title>
 
@@ -12,6 +12,7 @@
 <style>
 body {
     background-color: darkcyan;
+    margin: 0px;
 }
             
 h1 {
@@ -24,7 +25,7 @@ h1 {
 }
 
 button {width:6em}
-button:hover:before {content:"Please press me ☺"}
+button:hover:before {content:"Please press me ☺ PLZ!!"}
 button:hover span {display:none}
 
 button {
@@ -39,31 +40,33 @@ button:hover {
 }
 </style>
 
-<script>
+<script type="text/javascript">
+
+setTimeout(function playVid(){
+  document.getElementById("Please Press me!!!").play();
+}, 7000);
 
 function revealRickRoll() {
     let revealNow = document.getElementById('revealed');
     revealNow.style.display = 'block';
 }
 
-function playVid() {
-    let vid = document.getElementById('Rick Roll Video');
-    vid.play();
-}
-
 function replaceTHEBUTTON() {
     let replace = document.getElementById('THEBUTTON');
     replace.style.display = 'none';
 }
+
 </script>
 
-<button id="THEBUTTON" onmouseover="revealRickRoll(), playVid(), replaceTHEBUTTON()"><span>Please press me ;-;</span></button>
+<a href="https://jack-the-pro101.github.io/E/" target="_blank">
+<button id="THEBUTTON" onclick="revealRickRoll(), playVid(), replaceTHEBUTTON()"><span>Please press me ;-;</span></button>
+</a>
 
 <div id="revealed" style="display: none;">
 
 <h1>GET RICKROLED!!!11!11</h1>
 
-<video id="Rick Roll Video" width="500" height="420" controls>
+<video id="Please Press me!!!" style="width: 100%; z-index: 0;" controls>
     <source src="Rick Astley - Never Gonna Give You Up (Video).mp4" type="video/mp4">
 </video>
 
