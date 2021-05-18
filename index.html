@@ -47,11 +47,11 @@ button:active {
 <script type="text/javascript">
 
 function a() {
-    setTimeout(()=>{
+   window.onblur = () => {
         window.onfocus = () => {
-            document.getElementById("Please Press me!!!").play();
+              document.getElementById("Please Press me!!!").play();
         }
-    },1000)
+   }
 }
 
 function e() {
