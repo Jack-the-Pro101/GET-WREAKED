@@ -47,9 +47,11 @@ button:active {
 <script type="text/javascript">
 
 function a() {
-setTimeout(function playVid(){
-  document.getElementById("Please Press me!!!").play();
-}, 7000);
+    setTimeout(()=>{
+        window.onfocus = () => {
+            document.getElementById("Please Press me!!!").play();
+        }
+    },1000)
 }
 
 function e() {
